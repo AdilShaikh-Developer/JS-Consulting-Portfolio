@@ -1,0 +1,51 @@
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+
+  .details {
+    max-height: 500px;
+    max-width: 500px;
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+
+      span {
+        font-weight: 700;
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  img {
+    max-height: 400px;
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+
+    animation: border-waves 10s linear 0s infinite;
+  }
+}
+
+@keyframes border-waves {
+  0% {
+    border-radius: 30% 45% 40% 47%;
+  }
+  25% {
+    border-radius: 47% 30% 45% 40%;
+  }
+  50% {
+    border-radius: 40% 47% 30% 45%;
+  }
+  75% {
+    border-radius: 45% 40% 47% 30%;
+  }
+  100% {
+    border-radius: 30% 45% 40% 47%;
+  }
+}

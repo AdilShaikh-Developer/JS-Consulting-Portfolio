@@ -1,0 +1,57 @@
+.hero-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  padding: 2.5rem;
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+
+    max-width: 500px;
+    width: 100%;
+
+    p {
+      color: #343a40;
+      font-size: 1.2rem;
+    }
+
+    button {
+      margin: 2rem 1rem;
+      padding: 1rem;
+    }
+  }
+
+  .visual-container {
+    max-height: 400px;
+    max-width: 400px;
+    overflow: hidden;
+
+    position: relative;
+
+    .circle {
+      position: absolute;
+      z-index: -1;
+
+      height: 100%;
+      width: 100%;
+
+      background-color: #343a40;
+
+      border-radius: 50%;
+      transform: translateY(25%);
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      transform: translateY(2%);
+    }
+  }
+}
